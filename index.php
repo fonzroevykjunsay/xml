@@ -20,9 +20,9 @@
  echo "<ul>
             <h2>$brand</h2>
               <ul>
-                  <li>Cost: $description </li>
-                  <li>Year: $capacity </li>
-                  <li>Album: $color </li>
+                  <li>descripition: $description </li>
+                  <li>capacity: $capacity </li>
+                  <li>color: $color </li>
               </ul>
           </ul>";
     ?>
