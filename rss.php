@@ -22,8 +22,8 @@
 
         echo "<bag>
         <brand>$brand</brand>
-        <cost>$cost</cost>
-        <year>$year</year>
+        <description>$description</description>
+        <capacity>$capacity</capacity>
         <color>$color</color>
         </bag>";
     }
