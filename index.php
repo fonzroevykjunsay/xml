@@ -5,7 +5,7 @@
  $content = $domOBJ->getElementsByTagName("bag");
 ?>
 
- <h1>Gadgets</h1>
+ <h1>Bags</h1>
 
  <?php
  foreach( $content as $data )
