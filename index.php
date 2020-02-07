@@ -1,8 +1,8 @@
 <?php
  $domOBJ = new DOMDocument();
- $domOBJ->load("https://kitarvin23.herokuapp.com/rss.php");//XML page URL
+ $domOBJ->load("https://fonzjunsay.herokuapp.com/rss.php");//XML page URL
  
- $content = $domOBJ->getElementsByTagName("gadget");
+ $content = $domOBJ->getElementsByTagName("bag");
 ?>
 
  <h1>Gadgets</h1>
@@ -13,15 +13,15 @@
      <div class="border">
      <?php
      $brand = $data->getElementsByTagName("brand")->item(0)->nodeValue;
-     $cost = $data->getElementsByTagName("cost")->item(0)->nodeValue;
-     $year = $data->getElementsByTagName("year")->item(0)->nodeValue;
+     $description = $data->getElementsByTagName("description")->item(0)->nodeValue;
+     $capacity = $data->getElementsByTagName("capacity")->item(0)->nodeValue;
      $color = $data->getElementsByTagName("color")->item(0)->nodeValue;
  
  echo "<ul>
             <h2>$brand</h2>
               <ul>
-                  <li>Cost: $cost </li>
-                  <li>Year: $year </li>
+                  <li>Cost: $description </li>
+                  <li>Year: $capacity </li>
                   <li>Album: $color </li>
               </ul>
           </ul>";
